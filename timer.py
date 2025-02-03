@@ -30,7 +30,7 @@ while value.lower() != "q":
     lasttime = time.time()
     lapnum += 1
   
-print("Exercice terminé !")
+print("Exercice terminé  !")
 
 
 
