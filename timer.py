@@ -1,35 +1,37 @@
 import time
-  
-# Timer starts
+
+# Démarrage du chronomètre
 starttime = time.time()
 lasttime = starttime
 lapnum = 1
 value = ""
-  
-print("Press ENTER for each lap.\nType Q and press ENTER to stop.")
-  
+
+print("Appuyez sur ENTRÉE pour chaque tour.\nTapez Q et appuyez sur ENTRÉE pour arrêter.")
+
 while value.lower() != "q":
               
-    # Input for the ENTER key press
+    # Attente de l'entrée pour chaque tour
     value = input()
   
-    # The current lap-time
-    laptime = round((time.time() - lasttime), 2)
+    # Calcul du temps du tour actuel
+    laptime = round((time.time() - lasttime), 7)
   
-    # Total time elapsed since the timer started
-    totaltime = round((time.time() - starttime), 2)
+    # Calcul du temps total écoulé depuis le début
+    totaltime = round((time.time() - starttime), 7)
   
-    # Printing the lap number, lap-time, and total time
-    print("Lap No. "+str(lapnum))
-    print("Total Time: "+str(totaltime))
-    print("Lap Time: "+str(laptime))
+    # Affichage du numéro du tour, du temps total et du temps du tour
+    print("Tour n° " + str(lapnum))
+    print("Temps Total: " + str(totaltime))
+    print("Temps du Tour: " + str(laptime))
             
-    print("*"*20)
+    print("*" * 20)
   
-    # Updating the previous total time and lap number
+    # Mise à jour du dernier temps et du numéro du tour
     lasttime = time.time()
     lapnum += 1
   
-print("Exercise complete!")
+print("Exercice terminé !")
+
+
 
 #https://www.udacity.com/blog/2021/09/create-a-timer-in-python-step-by-step-guide.html
