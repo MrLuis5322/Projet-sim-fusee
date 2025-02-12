@@ -1,18 +1,624 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjcspwc5fp4bd"]
+[gd_scene load_steps=29 format=3 uid="uid://bjcspwc5fp4bd"]
 
 [ext_resource type="Texture2D" uid="uid://dsemrkxuohpjm" path="res://zImages/Hangar tileSet.png" id="1_otd4l"]
+[ext_resource type="Texture2D" uid="uid://ctygbhbb24uyh" path="res://zImages/Designer.jpeg" id="2_xl37f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eiuju"]
 atlas = ExtResource("1_otd4l")
-region = Rect2(65.7814, 99.0578, 574.619, 420.042)
+region = Rect2(65.7814, 99.0578, 494.719, 362.635)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrm2f"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(128, 99.0578, 512, 362.635)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_belc6"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(128.529, 96, 428.535, 368)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hq22b"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(128, 160, 512, 301.692)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih7e0"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(64, 160, 495.363, 304)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gnec"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(128, 168, 512, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kv6nu"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(128, 160, 432, 304)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uic76"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(64, 168, 495.363, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0e47"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(128, 168, 431.363, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbmqh"]
+atlas = ExtResource("2_xl37f")
+region = Rect2(80, 888, 80, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4dce"]
+atlas = ExtResource("2_xl37f")
+region = Rect2(184, 888, 72, 72)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w86j2"]
+load_path = "res://.godot/imported/Designer.jpeg-c5aa9187b174a9a09043feec35c1d0b9.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwi0d"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(632, 880, 72, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g53xn"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(824, 872, 96, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4idgq"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(288, 888, 32, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khinp"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(344, 904, 104, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikij8"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(472, 896, 40, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_chsna"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(568, 889.8, 28.4122, 72.3033)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g84q"]
+atlas = SubResource("CompressedTexture2D_w86j2")
+region = Rect2(732.05, 875.025, 58.2413, 82.8098)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hc15"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(7.63338, 836.091, 113.457, 169.657)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_se8w3"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(135.629, 828.352, 112.33, 82.9777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rq2rk"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(263.198, 833.943, 66.8938, 76.1528)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yd6of"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(439.102, 776.718, 102.479, 90.0827)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38ckw"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(659.523, 13.0357, 290.083, 96.6943)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjqys"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(969.854, 126.087, 53.3434, 58.6026)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33x8h"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(349.779, 835.043, 67.6184, 74.3802)
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
-[node name="HangarTileSet" type="Sprite2D" parent="."]
+[node name="Garage" type="Node2D" parent="."]
+
+[node name="TopGauche" type="Sprite2D" parent="Garage"]
 texture_filter = 1
-position = Vector2(536, 96)
+position = Vector2(288, 208)
 texture = SubResource("AtlasTexture_eiuju")
 
+[node name="TopDroit" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2088, 208)
+texture = SubResource("AtlasTexture_xrm2f")
+
+[node name="Top" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(752, 208)
+texture = SubResource("AtlasTexture_belc6")
+
+[node name="Top2" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1184, 208)
+texture = SubResource("AtlasTexture_belc6")
+
+[node name="Top3" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1616, 208)
+texture = SubResource("AtlasTexture_belc6")
+
+[node name="MurDroit" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2088, 544)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(288, 544)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit2" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 848)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche2" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 848)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit3" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 1152)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche3" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 1152)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit4" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 1456)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche4" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 1456)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit5" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 1760)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche5" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 1760)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit6" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2088, 2064)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche6" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(288, 2064)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit7" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 2368)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche7" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 2368)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit8" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 2672)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche8" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 2672)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit9" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 2976)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche9" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 2976)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit10" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 3280)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche10" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 3280)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit11" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2088, 3576)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche11" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(288, 3576)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit12" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 3880)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche12" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 3880)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit13" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 4184)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche13" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 4184)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit14" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 4488)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="MurGauche14" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 4488)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="MurDroit15" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2087.5, 4792)
+texture = SubResource("AtlasTexture_hq22b")
+
+[node name="PlancherDroit" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(2088, 5120)
+texture = SubResource("AtlasTexture_1gnec")
+
+[node name="MurGauche15" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(287.5, 4792)
+texture = SubResource("AtlasTexture_ih7e0")
+
+[node name="Mur" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(752, 544)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur2" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1184, 544)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur3" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1616, 544)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur4" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 848)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur5" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 848)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur6" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 848)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur7" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 1152)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur8" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 1152)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur9" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 1152)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur10" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 1456)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur11" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 1456)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur12" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 1456)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur13" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 1760)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur14" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 1760)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur15" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 1760)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur16" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(752, 2064)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur17" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1184, 2064)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur18" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1616, 2064)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur19" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 2368)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur20" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 2368)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur21" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 2368)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur22" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 2672)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur23" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 2672)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur24" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 2672)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur25" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 2976)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur26" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 2976)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur27" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 2976)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur28" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 3280)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur29" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 3280)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur30" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 3280)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur31" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(752, 3576)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur32" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1184, 3576)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur33" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1616, 3576)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur34" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 3880)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur35" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 3880)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur36" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 3880)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur37" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 4184)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur38" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 4184)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur39" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 4184)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur40" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 4488)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur41" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 4488)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur42" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 4488)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur43" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(751.5, 4792)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur44" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1183.5, 4792)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="Mur45" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1615.5, 4792)
+texture = SubResource("AtlasTexture_kv6nu")
+
+[node name="PlancherGauche" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(288, 5120)
+texture = SubResource("AtlasTexture_uic76")
+
+[node name="Plancher" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(752, 5120)
+texture = SubResource("AtlasTexture_k0e47")
+
+[node name="Plancher2" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1184, 5120)
+texture = SubResource("AtlasTexture_k0e47")
+
+[node name="Plancher3" type="Sprite2D" parent="Garage"]
+texture_filter = 1
+position = Vector2(1616, 5120)
+texture = SubResource("AtlasTexture_k0e47")
+
+[node name="Bloc1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-27, 170)
+texture = SubResource("AtlasTexture_mbmqh")
+
+[node name="Bloc2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-106, 169)
+texture = SubResource("AtlasTexture_i4dce")
+
+[node name="Bloc3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-105, 251)
+texture = SubResource("AtlasTexture_qwi0d")
+
+[node name="Bloc5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-99, 342)
+texture = SubResource("AtlasTexture_g53xn")
+
+[node name="Prop1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-30, 343)
+texture = SubResource("AtlasTexture_4idgq")
+
+[node name="Prop2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-93, 422)
+texture = SubResource("AtlasTexture_khinp")
+
+[node name="Prop3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-235, 238)
+texture = SubResource("AtlasTexture_ikij8")
+
+[node name="Prop4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-183, -187)
+texture = SubResource("AtlasTexture_chsna")
+
+[node name="Bloc4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-23, 252)
+texture = SubResource("AtlasTexture_8g84q")
+
+[node name="Bloc6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-346, 218)
+texture = SubResource("AtlasTexture_0hc15")
+
+[node name="Bloc7" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-336, 66)
+texture = SubResource("AtlasTexture_se8w3")
+
+[node name="Bloc8" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-340, 366)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Vent1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-86, 51)
+texture = SubResource("AtlasTexture_yd6of")
+
+[node name="Vent2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-198, -62)
+texture = SubResource("AtlasTexture_38ckw")
+
+[node name="Vent3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-218, 116)
+texture = SubResource("AtlasTexture_kjqys")
+
+[node name="Box" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-42, -189)
+texture = SubResource("AtlasTexture_33x8h")
+
 [node name="HangarTileSet2" type="Sprite2D" parent="."]
-position = Vector2(1429, 205)
+position = Vector2(-675, 971)
 texture = ExtResource("1_otd4l")
+
+[node name="Designer" type="Sprite2D" parent="."]
+position = Vector2(-1352, -1560)
+texture = ExtResource("2_xl37f")
