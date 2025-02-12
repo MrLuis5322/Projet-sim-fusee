@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dsemrkxuohpjm" path="res://zImages/Hangar tileSet.png" id="1_otd4l"]
 [ext_resource type="Texture2D" uid="uid://ctygbhbb24uyh" path="res://zImages/Designer.jpeg" id="2_xl37f"]
-[ext_resource type="Texture2D" uid="uid://cj5i8a0nritx0" path="res://zImages/Window.jpeg" id="3_d0c22"]
-[ext_resource type="Script" path="res://GarageScripts/OutsideWindow.gd" id="4_j3v12"]
+[ext_resource type="Texture2D" uid="uid://d4eejd41604om" path="res://zImages/Window.JPG" id="3_5mjht"]
+[ext_resource type="Script" path="res://GarageScripts/RocketWindow.gd" id="4_wyy5a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eiuju"]
 atlas = ExtResource("1_otd4l")
@@ -108,10 +108,6 @@ region = Rect2(349.779, 835.043, 67.6184, 74.3802)
 atlas = ExtResource("1_otd4l")
 region = Rect2(969.854, 126.087, 53.3434, 58.6026)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hhl38"]
-atlas = ExtResource("3_d0c22")
-region = Rect2(269.272, 280.636, 486.364, 370)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_j6ooc"]
 atlas = ExtResource("1_otd4l")
 region = Rect2(63.1056, 547.926, 301.224, 38.973)
@@ -119,6 +115,8 @@ region = Rect2(63.1056, 547.926, 301.224, 38.973)
 [sub_resource type="AtlasTexture" id="AtlasTexture_l5tls"]
 atlas = ExtResource("1_otd4l")
 region = Rect2(46.176, 547.926, 105.734, 38.973)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_txjvg"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
@@ -853,98 +851,97 @@ texture = SubResource("AtlasTexture_kjqys")
 
 [node name="Window" type="Node2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="Window"]
-light_mask = 0
-texture_filter = 1
-position = Vector2(1219, 1461.5)
-scale = Vector2(3.57202, 4.14324)
-texture = SubResource("AtlasTexture_hhl38")
-script = ExtResource("4_j3v12")
-
 [node name="Sprite2D2" type="Sprite2D" parent="Window"]
-position = Vector2(539.556, 671.232)
+position = Vector2(505.556, 728.232)
 scale = Vector2(1.512, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Window"]
-position = Vector2(995.556, 671.232)
+position = Vector2(961.556, 728.232)
 scale = Vector2(1.512, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D4" type="Sprite2D" parent="Window"]
-position = Vector2(1451.56, 671.232)
+position = Vector2(1417.56, 728.232)
 scale = Vector2(1.512, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D5" type="Sprite2D" parent="Window"]
-position = Vector2(1897.5, 671.232)
+position = Vector2(1863.5, 728.232)
 scale = Vector2(1.49834, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D14" type="Sprite2D" parent="Window"]
-position = Vector2(531.556, 2247.23)
+position = Vector2(497.556, 2304.23)
 scale = Vector2(1.512, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D15" type="Sprite2D" parent="Window"]
-position = Vector2(987.556, 2247.23)
+position = Vector2(953.556, 2304.23)
 scale = Vector2(1.512, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D16" type="Sprite2D" parent="Window"]
-position = Vector2(1443.56, 2247.23)
+position = Vector2(1409.56, 2304.23)
 scale = Vector2(1.512, 1.22276)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D17" type="Sprite2D" parent="Window"]
-position = Vector2(1896, 2247)
+position = Vector2(1862, 2304)
 scale = Vector2(1.51329, 1.21053)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D6" type="Sprite2D" parent="Window"]
-position = Vector2(329.498, 920)
+position = Vector2(295.498, 977)
 rotation = 1.5708
 scale = Vector2(1.512, 1.09275)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D7" type="Sprite2D" parent="Window"]
-position = Vector2(330.247, 1376)
+position = Vector2(296.247, 1433)
 rotation = 1.5708
 scale = Vector2(1.512, 1.13218)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D8" type="Sprite2D" parent="Window"]
-position = Vector2(329.784, 1832)
+position = Vector2(295.784, 1889)
 rotation = 1.5708
 scale = Vector2(1.512, 1.16347)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D9" type="Sprite2D" parent="Window"]
-position = Vector2(2101.62, 923.556)
+position = Vector2(2067.62, 980.556)
 rotation = 1.5708
 scale = Vector2(1.512, 1.138)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D10" type="Sprite2D" parent="Window"]
-position = Vector2(2101.62, 1379.56)
+position = Vector2(2067.62, 1436.56)
 rotation = 1.5708
 scale = Vector2(1.512, 1.138)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D11" type="Sprite2D" parent="Window"]
-position = Vector2(2101.62, 1835.56)
+position = Vector2(2067.62, 1892.56)
 rotation = 1.5708
 scale = Vector2(1.512, 1.138)
 texture = SubResource("AtlasTexture_j6ooc")
 
 [node name="Sprite2D12" type="Sprite2D" parent="Window"]
-position = Vector2(2102, 2144)
+position = Vector2(2068, 2201)
 rotation = 1.5708
 scale = Vector2(1.53105, 1.138)
 texture = SubResource("AtlasTexture_l5tls")
 
 [node name="Sprite2D13" type="Sprite2D" parent="Window"]
-position = Vector2(331, 2142.26)
+position = Vector2(297, 2199.26)
 rotation = 1.5708
 scale = Vector2(1.56, 1.20431)
 texture = SubResource("AtlasTexture_l5tls")
+
+[node name="Window" type="Sprite2D" parent="Window"]
+material = SubResource("ShaderMaterial_txjvg")
+position = Vector2(1182.69, 1519.69)
+scale = Vector2(3.63387, 4.20993)
+texture = ExtResource("3_5mjht")
+script = ExtResource("4_wyy5a")
