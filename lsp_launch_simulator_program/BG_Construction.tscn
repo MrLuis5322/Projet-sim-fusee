@@ -1,7 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://bjcspwc5fp4bd"]
+[gd_scene load_steps=34 format=3 uid="uid://bjcspwc5fp4bd"]
 
 [ext_resource type="Texture2D" uid="uid://dsemrkxuohpjm" path="res://zImages/Hangar tileSet.png" id="1_otd4l"]
 [ext_resource type="Texture2D" uid="uid://ctygbhbb24uyh" path="res://zImages/Designer.jpeg" id="2_xl37f"]
+[ext_resource type="Texture2D" uid="uid://cj5i8a0nritx0" path="res://zImages/Window.jpeg" id="3_d0c22"]
+[ext_resource type="Script" path="res://GarageScripts/OutsideWindow.gd" id="4_j3v12"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eiuju"]
 atlas = ExtResource("1_otd4l")
@@ -98,13 +100,25 @@ region = Rect2(439.102, 776.718, 102.479, 90.0827)
 atlas = ExtResource("1_otd4l")
 region = Rect2(659.523, 13.0357, 290.083, 96.6943)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_33x8h"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(349.779, 835.043, 67.6184, 74.3802)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_kjqys"]
 atlas = ExtResource("1_otd4l")
 region = Rect2(969.854, 126.087, 53.3434, 58.6026)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_33x8h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhl38"]
+atlas = ExtResource("3_d0c22")
+region = Rect2(269.272, 280.636, 486.364, 370)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6ooc"]
 atlas = ExtResource("1_otd4l")
-region = Rect2(349.779, 835.043, 67.6184, 74.3802)
+region = Rect2(63.1056, 547.926, 301.224, 38.973)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5tls"]
+atlas = ExtResource("1_otd4l")
+region = Rect2(46.176, 547.926, 105.734, 38.973)
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
@@ -114,426 +128,511 @@ region = Rect2(349.779, 835.043, 67.6184, 74.3802)
 texture_filter = 1
 position = Vector2(288, 208)
 texture = SubResource("AtlasTexture_eiuju")
+metadata/_edit_lock_ = true
 
 [node name="TopDroit" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2088, 208)
 texture = SubResource("AtlasTexture_xrm2f")
+metadata/_edit_lock_ = true
 
 [node name="Top" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(752, 208)
 texture = SubResource("AtlasTexture_belc6")
+metadata/_edit_lock_ = true
 
 [node name="Top2" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1184, 208)
 texture = SubResource("AtlasTexture_belc6")
+metadata/_edit_lock_ = true
 
 [node name="Top3" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1616, 208)
 texture = SubResource("AtlasTexture_belc6")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2088, 544)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(288, 544)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit2" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 848)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche2" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 848)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit3" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 1152)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche3" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 1152)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit4" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 1456)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche4" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 1456)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit5" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 1760)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche5" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 1760)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit6" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2088, 2064)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche6" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(288, 2064)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit7" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 2368)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche7" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 2368)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit8" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 2672)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche8" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 2672)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit9" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 2976)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche9" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 2976)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit10" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 3280)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche10" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 3280)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit11" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2088, 3576)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche11" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(288, 3576)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit12" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 3880)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche12" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 3880)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit13" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 4184)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche13" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 4184)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit14" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 4488)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche14" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 4488)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="MurDroit15" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2087.5, 4792)
 texture = SubResource("AtlasTexture_hq22b")
+metadata/_edit_lock_ = true
 
 [node name="PlancherDroit" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(2088, 5120)
 texture = SubResource("AtlasTexture_1gnec")
+metadata/_edit_lock_ = true
 
 [node name="MurGauche15" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(287.5, 4792)
 texture = SubResource("AtlasTexture_ih7e0")
+metadata/_edit_lock_ = true
 
 [node name="Mur" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(752, 544)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur2" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1184, 544)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur3" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1616, 544)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur4" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 848)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur5" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 848)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur6" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 848)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur7" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 1152)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur8" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 1152)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur9" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 1152)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur10" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 1456)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur11" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 1456)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur12" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 1456)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur13" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 1760)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur14" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 1760)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur15" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 1760)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur16" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(752, 2064)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur17" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1184, 2064)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur18" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1616, 2064)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur19" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 2368)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur20" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 2368)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur21" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 2368)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur22" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 2672)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur23" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 2672)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur24" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 2672)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur25" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 2976)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur26" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 2976)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur27" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 2976)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur28" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 3280)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur29" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 3280)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur30" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 3280)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur31" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(752, 3576)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur32" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1184, 3576)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur33" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1616, 3576)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur34" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 3880)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur35" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 3880)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur36" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 3880)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur37" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 4184)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur38" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 4184)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur39" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 4184)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur40" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 4488)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur41" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 4488)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur42" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 4488)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur43" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(751.5, 4792)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur44" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1183.5, 4792)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="Mur45" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1615.5, 4792)
 texture = SubResource("AtlasTexture_kv6nu")
+metadata/_edit_lock_ = true
 
 [node name="PlancherGauche" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(288, 5120)
 texture = SubResource("AtlasTexture_uic76")
+metadata/_edit_lock_ = true
 
 [node name="Plancher" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(752, 5120)
 texture = SubResource("AtlasTexture_k0e47")
+metadata/_edit_lock_ = true
 
 [node name="Plancher2" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1184, 5120)
 texture = SubResource("AtlasTexture_k0e47")
+metadata/_edit_lock_ = true
 
 [node name="Plancher3" type="Sprite2D" parent="Garage"]
 texture_filter = 1
 position = Vector2(1616, 5120)
 texture = SubResource("AtlasTexture_k0e47")
+metadata/_edit_lock_ = true
 
 [node name="Bloc1" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -582,33 +681,149 @@ texture = SubResource("AtlasTexture_8g84q")
 
 [node name="Bloc6" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-346, 218)
+position = Vector2(-448, 192)
 texture = SubResource("AtlasTexture_0hc15")
 
 [node name="Bloc7" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-336, 66)
+position = Vector2(912, 128)
+texture = SubResource("AtlasTexture_se8w3")
+
+[node name="Bloc9" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1192, 128)
+texture = SubResource("AtlasTexture_se8w3")
+
+[node name="Bloc10" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1456, 128)
+texture = SubResource("AtlasTexture_se8w3")
+
+[node name="Bloc11" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1920, 128)
+texture = SubResource("AtlasTexture_se8w3")
+
+[node name="Bloc12" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(448, 128)
 texture = SubResource("AtlasTexture_se8w3")
 
 [node name="Bloc8" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-340, 366)
+position = Vector2(79.5, 432)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc14" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 1040)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc22" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 1640)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc23" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 2256)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc24" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 2864)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc25" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 3464)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc26" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 4072)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc27" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(80, 4680)
+scale = Vector2(0.742424, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc13" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296.25, 432)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc15" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 1040)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc16" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 1648)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc17" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 2256)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc18" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 2864)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc19" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 3464)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc20" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 4072)
+scale = Vector2(0.977274, 1)
+texture = SubResource("AtlasTexture_rq2rk")
+
+[node name="Bloc21" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2296, 4680)
+scale = Vector2(0.977274, 1)
 texture = SubResource("AtlasTexture_rq2rk")
 
 [node name="Vent1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-86, 51)
+position = Vector2(1024, 136)
+texture = SubResource("AtlasTexture_yd6of")
+
+[node name="Vent5" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1344, 136)
 texture = SubResource("AtlasTexture_yd6of")
 
 [node name="Vent2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-198, -62)
+position = Vector2(248, 128)
 texture = SubResource("AtlasTexture_38ckw")
 
-[node name="Vent3" type="Sprite2D" parent="."]
+[node name="Vent4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-218, 116)
-texture = SubResource("AtlasTexture_kjqys")
+position = Vector2(2120, 136)
+texture = SubResource("AtlasTexture_38ckw")
 
 [node name="Box" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -622,3 +837,114 @@ texture = ExtResource("1_otd4l")
 [node name="Designer" type="Sprite2D" parent="."]
 position = Vector2(-1352, -1560)
 texture = ExtResource("2_xl37f")
+
+[node name="Vent3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(144, 5192)
+scale = Vector2(1.585, 1.585)
+texture = SubResource("AtlasTexture_kjqys")
+
+[node name="Vent6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2240, 5200)
+rotation = 1.5708
+scale = Vector2(1.585, 1.585)
+texture = SubResource("AtlasTexture_kjqys")
+
+[node name="Window" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Window"]
+light_mask = 0
+texture_filter = 1
+position = Vector2(1219, 1461.5)
+scale = Vector2(3.57202, 4.14324)
+texture = SubResource("AtlasTexture_hhl38")
+script = ExtResource("4_j3v12")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Window"]
+position = Vector2(539.556, 671.232)
+scale = Vector2(1.512, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Window"]
+position = Vector2(995.556, 671.232)
+scale = Vector2(1.512, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Window"]
+position = Vector2(1451.56, 671.232)
+scale = Vector2(1.512, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Window"]
+position = Vector2(1897.5, 671.232)
+scale = Vector2(1.49834, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D14" type="Sprite2D" parent="Window"]
+position = Vector2(531.556, 2247.23)
+scale = Vector2(1.512, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D15" type="Sprite2D" parent="Window"]
+position = Vector2(987.556, 2247.23)
+scale = Vector2(1.512, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D16" type="Sprite2D" parent="Window"]
+position = Vector2(1443.56, 2247.23)
+scale = Vector2(1.512, 1.22276)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D17" type="Sprite2D" parent="Window"]
+position = Vector2(1896, 2247)
+scale = Vector2(1.51329, 1.21053)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Window"]
+position = Vector2(329.498, 920)
+rotation = 1.5708
+scale = Vector2(1.512, 1.09275)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Window"]
+position = Vector2(330.247, 1376)
+rotation = 1.5708
+scale = Vector2(1.512, 1.13218)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Window"]
+position = Vector2(329.784, 1832)
+rotation = 1.5708
+scale = Vector2(1.512, 1.16347)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Window"]
+position = Vector2(2101.62, 923.556)
+rotation = 1.5708
+scale = Vector2(1.512, 1.138)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Window"]
+position = Vector2(2101.62, 1379.56)
+rotation = 1.5708
+scale = Vector2(1.512, 1.138)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D11" type="Sprite2D" parent="Window"]
+position = Vector2(2101.62, 1835.56)
+rotation = 1.5708
+scale = Vector2(1.512, 1.138)
+texture = SubResource("AtlasTexture_j6ooc")
+
+[node name="Sprite2D12" type="Sprite2D" parent="Window"]
+position = Vector2(2102, 2144)
+rotation = 1.5708
+scale = Vector2(1.53105, 1.138)
+texture = SubResource("AtlasTexture_l5tls")
+
+[node name="Sprite2D13" type="Sprite2D" parent="Window"]
+position = Vector2(331, 2142.26)
+rotation = 1.5708
+scale = Vector2(1.56, 1.20431)
+texture = SubResource("AtlasTexture_l5tls")
