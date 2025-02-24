@@ -56,3 +56,17 @@ func get_all_sprites(node: Node) -> Array:
         sprites.append_array(get_all_sprites(child))
     return sprites
     
+
+
+func _on_play_button_pressed():
+    print("Play button pressed!")
+    get_tree().change_scene_to_file(("res://scenes/Garage.tscn"))
+
+
+func _on_options_button_pressed():
+    print("Options button pressed!")
+
+
+func _on_quit_button_pressed():
+    print("Quit button pressed!")
+    get_tree().quit()

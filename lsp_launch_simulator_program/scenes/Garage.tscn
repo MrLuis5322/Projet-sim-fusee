@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://s5vdnjhp752v"]
+
+[ext_resource type="PackedScene" uid="uid://bjcspwc5fp4bd" path="res://scenes/BG_Construction.tscn" id="1_5t2w5"]
+[ext_resource type="Script" path="res://Garage/GarageScripts/camera_2d.gd" id="2_yis4f"]
+
+[node name="Main" type="Node2D"]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_5t2w5")]
+follow_viewport_enabled = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1175, 2751)
+script = ExtResource("2_yis4f")
+zoomSpeed = 5.0
+moveSpeed = null
+dragSensitivity = 20000.0
