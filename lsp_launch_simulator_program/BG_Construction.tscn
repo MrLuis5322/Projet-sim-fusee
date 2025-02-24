@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dsemrkxuohpjm" path="res://zImages/Hangar tileSet.png" id="1_otd4l"]
 [ext_resource type="Texture2D" uid="uid://ctygbhbb24uyh" path="res://zImages/Designer.jpeg" id="2_xl37f"]
-[ext_resource type="Texture2D" uid="uid://d4eejd41604om" path="res://zImages/Window.JPG" id="3_5mjht"]
+[ext_resource type="Texture2D" uid="uid://dirx1evuj7wq7" path="res://zImages/Window.JPG" id="3_5mjht"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eiuju"]
 atlas = ExtResource("1_otd4l")
